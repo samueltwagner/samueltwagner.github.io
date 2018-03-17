@@ -12,7 +12,7 @@
         }
     
         table, td, th {
-            border: 2px solid lightgrey;
+            border: 1.5px solid lightgrey;
         }
         
         table {
@@ -49,18 +49,26 @@
             background: #e7f0ed;
         }
         
-        tr:last-child {
-            color: black;
-        }
-        
         tr td:nth-child(even){
             width: 75px;
         }
         
-        .onlyclass {
-            background-color:#7fb9c2;
-            font-size: 12px;
+        t {
+            background-color: #628ca6;
+            color: white;
         }
+        
+        .onlyclass {
+            background-color: #628ca6;
+            color: white;
+        }
+        
+        tfoot td{
+            color: black;
+            background-color: #7fb9c2;
+            font-size: 13px;
+        }
+        
     </style>
 </head>
 
@@ -95,7 +103,7 @@
         <tr>
             <td>November</td>
             <td>$8,610</td>
-            <td>$7,500</td>
+            <td class="onlyclass">$7,500</td>
         </tr>
         <tr>
             <td><i>Black Friday</i></td>
@@ -110,7 +118,7 @@
     
     <tfoot>
         <tr>
-            <td class="onlyclass" colspan="3">Compiled 3.17.2018 by Swagner</td>
+            <td colspan="3">Compiled 3.17.2018 by Swagner</td>
         </tr>
     </tfoot>
   </table>
