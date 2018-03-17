@@ -16,5 +16,4 @@ function computewindchill(temperature, windspeed) {
 	document.getElementById("output").innerHTML = "The value is <strong>" + f.toFixed(2) + "</strong>!";
 }
 
-function get(e) { return document.getElementById(e); }
 
