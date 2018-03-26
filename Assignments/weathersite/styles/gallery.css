@@ -1,0 +1,43 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px) ;
+  grid-gap: 20px;
+
+}
+
+.one {
+      background-color: #ce8146;
+}
+
+.two {
+      background-color: #ce8146;
+}
+
+.three {
+      background-color: #ce8146;
+}
+
+.four {
+      background-color: #ce8146;
+}
+
+.five {
+      background-color: #ce8146;
+}
+
+.six {
+      background-color: #ce8146;
+}
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 800px;
+  }
+}
+
+.wrapper img:hover {
+    box-shadow: 10px 10px 15px gray;
+}
+
+.opac {opacity: .5;}
+

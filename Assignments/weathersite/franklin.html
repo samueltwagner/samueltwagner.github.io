@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The City of Frankliln</title>
+  <meta name="author" content="Sam Wagner">
+  <meta name="description" content="The City of Franklin Home Page providing the weather forecast and a franklin article.">
+    
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet"> 
+    
+  <link href="https://fonts.googleapis.com/css?family=Karma|Montserrat" rel="stylesheet">
+  <!-- font-family: 'Montserrat', sans-serif;
+  font-family: 'Karma', serif; -->
+    
+  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
+</head>
+<body>
+
+  <header>
+    <img src="images/new-logo.png" alt="The site logo" width="100px" height="100px">
+    <h1>The City of Franklin</h1>
+    <div class="subheading">Your Legacy is our Vision</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav">
+    	<li><a href="index.html">Home</a></li>
+    	<li class="active"><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>The City of Franklin</h2>
+    <figure>
+      <img sizes="50vw" 
+           srcset="images/Optimized-franklin-original1200.jpeg 1200w,
+                   images/Optimized-franklin-original800.jpeg 800w,
+                   images/Optimized-franklin-original1200.jpeg 1200w" alt="Cover photo">
+    </figure>
+              
+    <section class="forecast">
+      <h2>Local Weather Report</h2>
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <section>
+        <p>Current Conditions: <span id="conditions">90</span></p>
+        <img id="icon" src="" alt="current weather">
+        <p>Current temperature: <span id="temperature">1900</span> &deg;F</p>
+        <p>Current Wind Speed: <span id="wind-speed">5000</span> mph</p>
+        <p id="forecast"></p>
+    </section>
+      
+      <section>
+          <h2>Wind Chill Calculator</h2>
+            <div class="form">
+                Enter the Temperature: 
+                <input type="text" id="temp" maxlength="2" size="7">
+            </div>
+            <br>
+            <div class="form">
+                Enter the Wind Speed: 
+                <input type="text" id="wind" maxlength="2" size="7">
+                <input type="submit" onclick="computewindchill()" value="Run Calculation">
+            </div>
+          <br>
+            <div id="output">Wind Chill factor Equals: </div>
+        </section>    
+      
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+      <p class="town-article">
+        
+        Bacon ipsum dolor amet burgdoggen meatball beef, jerky shank spare ribs filet mignon cow tail pork belly. Brisket kevin bacon, ball tip frankfurter sirloin shankle ground round meatloaf short ribs. Boudin pork jowl, shankle meatloaf shoulder hamburger. Corned beef biltong alcatra, shank ham sausage hamburger strip steak leberkas.
+
+        Kielbasa shank strip steak pork chop andouille tongue pork loin pork belly ribeye. Short ribs turducken turkey, strip steak chuck ball tip ground round frankfurter fatback. Meatball turkey pork belly, rump bresaola drumstick kielbasa pastrami bacon alcatra beef pork chop kevin. Flank doner leberkas chuck chicken sausage. Turkey ham hock ground round meatloaf short loin ham. Leberkas tail meatball hamburger pig bacon. Ham hock shankle ground round, boudin porchetta pig shoulder ham doner.
+      </p>
+        <img src="images/kinzig-fischer-bach-black-forest-water-158316.jpeg" alt="franklin lake" width="500" height="500">
+		</article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      Email me at mister@planner.com
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The City of Franklin | <span id="currentdate">sam</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+  <script src="scripts/wu-weather.js"></script>
+
+</body>
+</html>

@@ -38,7 +38,7 @@ nav {
 nav button {
     
 }
-nav ul.hide {display: none;}
+
 nav ul li {}
 nav ul li a {
 
@@ -52,6 +52,7 @@ main {
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
+
 
 #section1 {
     padding:5px;
