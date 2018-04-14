@@ -1,0 +1,51 @@
+/*dark #042A2B*/
+/*blue #5EB1BF*/
+/*light blue #CDEDF6*/
+/*orange #EF7B45*/
+/*red #D847S7*/
+
+body {
+    background: #5EB1BF;
+    font-family: 'Merriweather', serif;
+}
+
+img {
+    align-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #CDEDF6
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #042A2B;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    background-color: #EF7B45;
+}
+
+#picture {
+    text-align: center;
+}
+
+nav {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+footer {
+    font-size: 12px;
+}
