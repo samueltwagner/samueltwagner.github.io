@@ -49,3 +49,9 @@ nav {
 footer {
     font-size: 12px;
 }
+
+#sec1 {
+    background-color:#EF7B45; 
+    text-align: center;
+    padding: 1px;
+}
