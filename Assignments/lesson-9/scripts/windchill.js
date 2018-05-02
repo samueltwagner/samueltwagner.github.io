@@ -17,13 +17,3 @@ function computewindchill(temperature, windspeed) {
 }
 
 
-new weatherObject = new XMLHttpRequest();
-      
-      weatherObject.open('GET','http://api.wunderground.com/api/d395ba8f0dfd08d9/conditions/q/CA/San_Francisco.json', true);
-      
-      weatherObject.send();
-      weatherObject.onload() = function () {
-          var weatherInfo = JSON.parse(weatherObject.responseText);
-          console.log(weatherInfo);
-          
-      }

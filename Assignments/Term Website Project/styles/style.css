@@ -54,4 +54,9 @@ footer {
     background-color:#EF7B45; 
     text-align: center;
     padding: 1px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+#sec2 h1 {
+    font-family: 'Do Hyeon', sans-serif;
 }
