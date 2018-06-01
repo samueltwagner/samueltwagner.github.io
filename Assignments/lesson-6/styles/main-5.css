@@ -1,78 +1,143 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { 
+    box-sizing: border-box;
+}  
 
 body {
   font-size: 16px;
-  font-family: sans-serif;
-  background-color: #d3e298;    
-  /* Declare the base font-family - from google font api or other */
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #577399;    
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+header, nav, main, footer {
+    width: 100%;
 }
 
 header {
-    background-color: #d3e298;
-    text-align: center;
+    background: #495867;
+    color: #f7f7ff;
+    padding: 10px;
 }
 
 header h1 {
-    background-color: #ecdd7b;
-}
-header img {
-    border: #ce8147;
-}
-header .subheading {
-    padding-bottom: 10px;
+    margin-left: 110px;
+    padding-top: 40px;
 }
 
-nav {
-    margin: 5%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
+header h4 {
+  margin-left: 140px;
+}
+
+#logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 3px #495867 solid;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 nav button {
-    
+ visibility: visible;
 }
 
-nav ul li {}
-nav ul li a {
-
+nav ul li.active a {
+    background-color: #495867;
 }
-nav ul li.active a {}
+
 nav ul li a:hover {}
 
 main {
     padding: 15px;
 }
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
-
+main h2 {
+    color: white;
+}
+main figure {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 2% auto;
+}
+main figure img { 
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 3px #bdd5ea solid;
+}
 
 #section1 {
-    padding:5px;
-    background-color: #ecdd7b;
+    background-color: #bdd5ea;
+    padding: 15px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 2% auto;
 }
 
-section {
-    background-color: #ce8146;
-    padding: 5px;
+#section1 .sunny {
+    text-align: center;
+    color: #495867;
+    width: 60%;
 }
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+#section1 img {
+    border: 3px white solid; 
+    width: 60%;
+    float:left;
+}
+
+.highandlow h3 {
+    color: #495867;
+}
+
+.current h3{
+    color: #495867;
+}
+
+.forecast {
+    background-color: #495867;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 2% auto;
+}
+
+.forecast table {
+    margin: 0 auto;
+    color: white;
+}
+
+.forecast table th {
+    color: white;
+}
+
+.forecast h3 {
+    color: white;
+    padding-top: 10px;
+}
+
+article {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    background-color: #bdd5ea;
+    padding: 15px;
+    margin-left: 2% auto;
+}
+article img { 
+    border: 3px white solid;
+    float: right;
+    width: 40%;
+    margin: 10px;
 }
 
 footer {
-    text-align: center;
+    text-align: left;
+    background-color: #495867;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
 }
-footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
-/* Other Class Selectors */
