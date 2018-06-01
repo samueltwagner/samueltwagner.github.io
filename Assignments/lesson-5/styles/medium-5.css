@@ -1,11 +1,11 @@
 @media only screen and (min-width: 37.5em) {
 
-    nav {
+  nav {
         visibility: visible;
     }
     
   section.forecast { 
-      display: 37.5em;
+      display: block;
     }  
   article p.town-article img {
       float: right; 

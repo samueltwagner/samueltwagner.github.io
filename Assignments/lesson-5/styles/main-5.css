@@ -9,7 +9,7 @@ body {
 }
 
 header, nav, main, footer {
-    max-width: 1600px;
+    width: 100%;
 }
 
 header {
@@ -41,6 +41,7 @@ nav {
 nav ul li.active a {
     background-color: #495867;
 }
+
 nav ul li a:hover {}
 
 main {
@@ -50,9 +51,9 @@ main h2 {
     color: white;
 }
 main figure {
-    text-align: center;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
+    margin-left: 2% auto;
 }
 main figure img { 
     width: 100%;
@@ -67,12 +68,13 @@ main figure img {
     width: 100%;
     max-width: 800px;
     text-align: center;
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 2% auto;
 }
 
 #section1 .sunny {
     text-align: center;
-    color: white;
+    color: #495867;
     width: 60%;
 }
 
@@ -83,11 +85,11 @@ main figure img {
 }
 
 .highandlow h3 {
-    color: white;
+    color: #495867;
 }
 
 .current h3{
-    color: white;
+    color: #495867;
 }
 
 .forecast {
@@ -95,24 +97,30 @@ main figure img {
     text-align: center;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin-left: 2% auto;
 }
 
 .forecast table {
     margin: 0 auto;
+    color: white;
 }
 
 .forecast table th {
     color: white;
 }
 
+.forecast h3 {
+    color: white;
+    padding-top: 10px;
+}
+
 article {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin-top: 20px;
     background-color: #bdd5ea;
     padding: 15px;
-    margin-top:20px;
+    margin-left: 2% auto;
 }
 article img { 
     border: 3px white solid;
@@ -122,5 +130,10 @@ article img {
 }
 
 footer {
-    text-align: center;
+    text-align: left;
+    background-color: #495867;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
 }
+
