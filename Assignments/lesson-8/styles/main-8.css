@@ -154,11 +154,11 @@ article img {
     padding-bottom: 10px;
 }
 
-#stormcenter{
+.stormcenter{
     text-align: center;
 }
 
-#stormcenter label {
+.stormcenter label {
     color: white;
     margin-bottom: 20px;
 }
