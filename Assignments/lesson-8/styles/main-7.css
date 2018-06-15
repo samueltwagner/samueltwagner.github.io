@@ -9,7 +9,8 @@ body {
 }
 
 header, nav, main, footer {
-    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 header {
@@ -28,9 +29,8 @@ header h4 {
 }
 
 #logo {
-    position: absolute;
     width: 100px;
-    height: 100px;
+    height: auto;
     border: 3px #495867 solid;
 }
 
@@ -50,6 +50,7 @@ nav ul li a:hover {}
 
 main {
     padding: 15px;
+    
 }
 main h2 {
     color: white;
@@ -138,8 +139,7 @@ article img {
     text-align: center;
     width: 100%;
     max-width: 800px;
-    margin-left: 0 auto;
-    
+    margin-left: 0 auto;  
 }
 
 #form h3 {
@@ -154,8 +154,17 @@ article img {
     padding-bottom: 10px;
 }
 
+#stormcenter{
+    text-align: center;
+}
+
+#stormcenter label {
+    color: white;
+    margin-bottom: 20px;
+}
+
 footer {
-    text-align: left;
+    text-align: center;
     background-color: #495867;
     color: white;
     padding: 10px;
