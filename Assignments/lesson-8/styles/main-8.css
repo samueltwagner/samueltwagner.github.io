@@ -156,11 +156,20 @@ article img {
 
 .stormcenter{
     text-align: center;
+    color: white;
 }
 
-.stormcenter label {
+.stormcenter form {
+    background-color: #495867;
+    padding: 10px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.stormcenter form input {
     color: white;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center
 }
 
 footer {
