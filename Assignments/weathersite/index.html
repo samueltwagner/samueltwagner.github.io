@@ -1,132 +1,80 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The City of Frankliln | Home</title>
+  <title>The Weather Police | Frankliln</title>
   <meta name="author" content="Sam Wagner">
-  <meta name="description" content="The City of Franklin Home Page providing the weather forecast and a franklin article.">
-     
-  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Karma|Montserrat" rel="stylesheet">
-    
-  <!-- Google API font reference -->
-  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
-    
+  <meta name="description" content="The Weather Police providing the weather forecast and an article about the city of Franklin.">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">   
+  <link href="styles/medium.css" rel="stylesheet">  
+  <link href="styles/large.css" rel="stylesheet">
 </head>
 <body>
-
   <header>
-    <img src="images/new-logo.png" alt="The site logo" width="100px" height="100px">
-    <h1>The Weather Guys </h1>
-    <div class="subheading">Weather Report for all of your local cities.</div>
+      <a href="#"><img id="logo" src="images/police-logo.png" alt="logo photo"></a>
+      <h1>The Weather Police</h1>
+      <h4>"No weather update goes unnoticed."</h4>
   </header>
-
-  <!-- site navigation use placeholder references -->
   <nav>
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav">
-    	<li><a href="index.html">Home</a></li>
-    	<li class="active"><a href="franklin.html">Franklin</a></li>
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
     	<li><a href="greenville.html">Greenville</a></li>
     	<li><a href="springfield.html">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="gallery.html">Gallery</a></li>
     </ul>		
   </nav>
-    
-  <main>
-    <h2></h2>
-    <figure>
-        
-        
-    </figure>
-      
-<!--       motto, year founded, population, and annual rainfall    -->
-      
-      
-      <section>
+  <main id="index">
+      <section class="home-page">
         <h2>Weather Story</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <img src="images/bench-blue-sky-city-small.jpeg" alt="franklin lake">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       </section>
       
-      <section>
+      <section class="home-page1">
         <h2>Weather Conditions for <span id="franklin"> City, State</span></h2>
+        <img src="images/winter-small.jpeg" alt="franklin lake">
         <p>Motto: <span id="f-motto">90</span></p>
         <p>Year Founded: <span id="f-year">1900</span></p>
         <p>Current Population: <span id="f-population">5000</span></p>
         <p>Average Rainfall: <span id="f-rain">30in</span></p>
       </section>
       
-      <section>
+      <section class="home-page1">
         <h2>Weather Conditions for <span id="greenville"> City, State</span></h2>
-        <p>Motto: <span id="g-motto">90</span></p>
+        <img src="images/spring-small.jpeg" alt="franklin lake">
+        <p>Motto:<span id="g-motto">90</span></p>
         <p>Year Founded: <span id="g-year">1900</span></p>
         <p>Current Population: <span id="g-population">5000</span></p>
         <p>Average Rainfall: <span id="g-rain">30in</span></p>
       </section>
       
-      <section>
+      <section class="home-page1">
         <h2>Weather Conditions for <span id="springfield"> City, State</span></h2>
+        <img src="images/fall-small.jpeg" alt="franklin lake">
         <p>Motto: <span id="s-motto">90</span></p>
         <p>Year Founded: <span id="s-year">1900</span></p>
         <p>Current Population: <span id="s-population">5000</span></p>
         <p>Average Rainfall: <span id="s-rain">30in</span></p>
       </section>
-      
-      <section>
-        <h2></h2>
-      </section>
-
   </main>
     
-  <footer>
-    <aside>
-      Email me at mister@planner.com
-    </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Home | <span id="currentdate">sam</span></p>
-  </footer>
+    <footer>
+        <aside>
+          Contact me at theweatherpolice@me.com | Phone Number: (939)123-3242
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Weather Police | <span id="currentdate">May 2018</span></p>
+    </footer>
 
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/windchill.js"></script>
   <script src="scripts/wu-weather.js"></script>
-    
-    
-  <script>
-      
-    var weatherObject = new XMLHttpRequest();
-    weatherObject.open('GET','https://byui-cit230.github.io/weather/data/towndata.json', true);
-    weatherObject.send();
-    weatherObject.onload = function () {
-      var weatherInfo = JSON.parse(weatherObject.responseText);
-      console.log(weatherInfo);
-        
-      document.getElementById('franklin').innerHTML = weatherInfo.towns["0"].name;
-      document.getElementById('greenville').innerHTML = weatherInfo.towns["1"].name;
-      document.getElementById('springfield').innerHTML = weatherInfo.towns["3"].name;
-
-      document.getElementById('f-motto').innerHTML = weatherInfo.towns["0"].motto;
-      document.getElementById('g-motto').innerHTML = weatherInfo.towns["1"].motto;
-      document.getElementById('s-motto').innerHTML = weatherInfo.towns["3"].motto;
-    
-      document.getElementById('f-year').innerHTML = weatherInfo.towns["0"].yearFounded;
-      document.getElementById('g-year').innerHTML = weatherInfo.towns["1"].yearFounded;
-      document.getElementById('s-year').innerHTML = weatherInfo.towns["3"].yearFounded;
-        
-      document.getElementById('f-population').innerHTML = weatherInfo.towns["0"].currentPopulation;
-      document.getElementById('g-population').innerHTML = weatherInfo.towns["1"].currentPopulation;
-      document.getElementById('s-population').innerHTML = weatherInfo.towns["3"].currentPopulation;
-        
-      document.getElementById('f-rain').innerHTML = weatherInfo.towns["0"].averageRainfall;
-      document.getElementById('g-rain').innerHTML = weatherInfo.towns["1"].averageRainfall;
-      document.getElementById('s-rain').innerHTML = weatherInfo.towns["3"].averageRainfall;
-      }
-  
-  </script>
- 
+  <script src="scripts/index.js"></script>
 </body>
 </html>
