@@ -264,7 +264,7 @@ body {
 }
 
 .footer h5 {
-	position: absolute;
+	display: inline;
 	top: 8px;
 	left: 7px;
 	font-family: 'Raleway', sans-serif;
