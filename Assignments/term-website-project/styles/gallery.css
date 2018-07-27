@@ -1,0 +1,41 @@
+
+main {
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px) ;
+  grid-gap: 70px;
+  margin: auto;
+  padding-bottom: 20px;
+  
+}
+
+.pic {
+    background-color: #049B7C;
+    padding: 10px;
+}
+
+.pic p {
+    padding: 10px;
+}
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 800px;
+  }
+    
+  .wrapper img:hover {
+    box-shadow: 5px 5px 5px #0CE8BA;
+  }
+
+  .opac {
+    opacity: .5;
+  }
+}
+

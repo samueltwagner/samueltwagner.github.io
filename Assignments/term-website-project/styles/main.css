@@ -1,0 +1,200 @@
+* { 
+    box-sizing: border-box;
+}  
+
+body {
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #0CE8BA;    
+}
+
+header, nav, main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background: #0CE8BA;
+    padding: 10px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header h4 {
+  text-align: center;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    border: 3px #049B7C solid;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+nav button {
+ visibility: visible;
+}
+
+nav ul li.active a {
+    background-color: #049B7C;
+}
+
+main {
+    
+}
+
+main figure {
+    width: 100%;
+    margin: 0 auto;
+}
+main figure img { 
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main h3 {
+    text-align: center;
+}
+
+#section1 {
+    background-color: #0CE8BA;
+    padding: 15px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 2% auto;
+}
+
+#section1 .sunny {
+    text-align: center;
+    color: #0CE8BA;
+    width: 60%;
+}
+
+#section1 img {
+    border: 3px white solid; 
+    width: 60%;
+    float:left;
+}
+
+.highandlow h3 {
+    color: #0CE8BA;
+}
+
+.current h3{
+    color: #0CE8BA;
+}
+
+.forecast {
+    background-color: #0CE8BA;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 2% auto;
+}
+
+.forecast table {
+    margin: 0 auto;
+    color: white;
+}
+
+.forecast table th {
+    color: white;
+}
+
+.forecast h3 {
+    color: white;
+    padding-top: 10px;
+}
+
+article {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    background-color: #0CE8BA;
+    padding: 15px;
+    margin-left: 2% auto;
+}
+
+article p {
+    padding-left: 20px;
+}
+
+article img { 
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+}
+
+.form {
+    background-color: #0CE8BA;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 0 auto;  
+}
+
+.form h3 {
+    padding-top: 10px;
+}
+
+.form input {
+    margin: 5px;
+}
+
+#output {
+    padding-bottom: 10px;
+}
+
+.events {
+    text-align: center;
+}
+
+.events form {
+    background-color: #0CE8BA;
+    padding: 10px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.events form input {
+    margin-top: 10px;
+    text-align: center
+}
+
+.home-page {
+    max-width: 800px;
+    background-color: #0CE8BA;
+    padding: 15px;
+    padding-bottom: 150px;
+    margin: 0 auto
+}
+
+.home-page img { 
+    border: 3px 0CE8BA solid;
+    width: 50%;
+    float: right;
+}
+
+.home-page h2 {
+    color: black;
+}
+
+.home-page1 {
+    visibility: hidden;
+}
+
+footer {
+    text-align: center;
+    background-color: #049B7C;
+    padding: 10px;
+}
+
