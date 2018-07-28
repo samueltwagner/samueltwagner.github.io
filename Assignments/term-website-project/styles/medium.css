@@ -26,7 +26,6 @@
         background-color: #049B7C;
         padding: 15px;
         margin: 0 auto;
-        visibility: visible;
         margin-bottom: 30px;
     }
     
@@ -39,7 +38,7 @@
     .home-page1 img { 
         height: 500px;
         margin: 0 auto;
-        visibility: visible;
+        
         border: 5px #0CE8BA solid;
     }
 }
