@@ -192,6 +192,72 @@ article img {
     visibility: hidden;
 }
 
+table {
+    margin: 60px auto;
+}
+
+    
+table {
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px gray;
+}
+
+td {
+    width: 100px;
+    height: 30px;
+}
+
+th {
+    font-size: 24px;
+    padding: 10px;
+    background-color: #27FFD2;
+    color: black;
+}
+
+tr {
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background: #27FFD2;
+}
+
+tr:first-child {
+    background-color: #049B7C;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #e7f0ed;
+}
+
+tr td:nth-child(even){
+    width: 75px;
+}
+        
+t {
+    background-color: #628ca6;
+}
+
+tfoot td{
+    color: black;
+    background-color: #049B7C
+    font-size: 13px;
+}
+        
+.contact
+{
+    text-align: center;
+}
+
+form h2 {
+    text-align: center;
+}
+
+#map { 
+    text-align: center;
+}
+
 footer {
     text-align: center;
     background-color: #049B7C;

@@ -21,49 +21,51 @@
   <nav>
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav">
-    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="index.html">Home</a></li>
     	<li><a href="adventure-tours.html">Adventure Tours</a></li>
     	<li><a href="repair-services.html">Repair Services</a></li>
     	<li><a href="shop.html">Shop</a></li>
     	<li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li class="active"><a href="contact.html">Contact Us</a></li>
     </ul>		
   </nav>
-  <main>
-    <h2>Gallery</h2>
-    <div class="wrapper">
-      <div class="pic">
-          <img src="images/weather-small.jpeg" alt="The site logo" width="200" height="100">
-          <p>One - Bacon ipsum dolor amet burgdoggen meatball beef, jerky shank spare ribs filet mignon cow tail pork belly. Brisket kevin bacon, ball tip frankfurter sirloin shankle ground round meatloaf short ribs. </p>
-        </div>
-      <div class="pic">
-          <img src="images/fall-small.jpeg" alt="The site logo" width="200" height="100">
-          <p>Two - Bacon ipsum dolor amet burgdoggen meatball beef, jerky shank spare ribs filet mignon cow tail pork belly. Brisket kevin bacon, ball tip frankfurter sirloin shankle ground round meatloaf short ribs. </p>
-        </div>
-      <div class="pic">
-          <img src="images/winter-small.jpeg" alt="The site logo" width="200" height="100">
-          <p>Three - Bacon ipsum dolor amet burgdoggen meatball beef, jerky shank spare ribs filet mignon cow tail pork belly. Brisket kevin bacon, ball tip frankfurter sirloin shankle ground round meatloaf short ribs. </p>
-        </div>
-      <div class="pic">
-          <img src="images/spring-small.jpeg" alt="The site logo" width="200" height="100">
-          <p>Four - Bacon ipsum dolor amet burgdoggen meatball beef, jerky shank spare ribs filet mignon cow tail pork belly. Brisket kevin bacon, ball tip frankfurter sirloin shankle ground round meatloaf short ribs. Boudin pork jowl, shankle meatloaf shoulder hamburger. Corned beef biltong alcatra, shank ham sausage hamburger strip steak leberkas.</p>
-        </div>
-      <div class="pic">
-          <img src="images/summer-small.jpeg" alt="The site logo" width="200" height="100">
-          <p>Five - Bacon ipsum dolor amet burgdoggen meatball beef, jerky shank spare ribs filet mignon cow tail pork belly. Brisket kevin bacon, ball tip frankfurter sirloin shankle ground round meatloaf short ribs. Boudin pork jowl, shankle meatloaf shoulder hamburger. Corned beef biltong alcatra, shank ham sausage hamburger strip steak leberkas.</p>
-        </div>
-      <div class="pic">
-          <img src="images/lake-small.jpeg" alt="The site logo" width="200" height="100">
-          <p>Six - Bacon ipsum dolor amet burgdoggen meatball beef, jerky shank spare ribs filet mignon cow tail pork belly. Brisket kevin bacon, ball tip frankfurter sirloin shankle ground round meatloaf short ribs. Boudin pork jowl, shankle meatloaf shoulder hamburger. Corned beef biltong alcatra, shank ham sausage hamburger strip steak leberkas.</p>
-        </div>
-    </div>  
-  </main>
+  <main>  
     
+    <h2>Find Us!</h2>
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931627761106!2d-111.09290618403361!3d45.6722728791039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1532749130242" width="600" height="450" frameborder="0" style="border:5px #049B7C solid" allowfullscreen></iframe>
+    </div>
+    
+    <h2>Contact Us!</h2>
+    <form class="contact" action="thanks.html">
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" placeholder="John" pattern="[A-Za-z]{5,}" required>
+        <br>
+        <br>
+        <label>Email:</label><br>
+        <input type="email" placeholder="email@demo.com">
+        <br>
+        <br>
+        <label>Phone Number:</label><br>
+        <input type="tel" required>
+        <br>      
+        <br>
+        <label>Additional Information or Comments:</label>
+        <br>
+        <br>
+        <textarea rows="5" cols="30"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <br>
+    </form>   
+  </main> 
   <footer>
     <aside>
-      Contact me at theweatherpolice@me.com | Phone Number: (939)123-3242
+      Contact us at the mountainspoke@thespoke.com | Phone Number: (939)123-3242
     </aside>
-    <p class="footer-bar">&copy;2018 All Rights Reserved | The Weather Police | <span id="currentdate">May 2018</span></p>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">July 2018</span></p>
   </footer>
 
   <script src="scripts/hamburger.js"></script>
