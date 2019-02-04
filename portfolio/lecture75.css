@@ -66,6 +66,11 @@ img {
     font-size: 50px;
 }
 
+#github {
+    font-size: 50px;
+    margin-left: 50px;
+}
+
 button {
     color: black;
     font-size: 2em;
