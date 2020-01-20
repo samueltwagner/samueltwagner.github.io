@@ -251,6 +251,8 @@ p {
 
 .flex-container img {
   width: 400px;
+  border: 1px solid #888888;
+  box-shadow: 1px  #333;
 }
 
 #resume {
@@ -260,10 +262,12 @@ p {
 
 #resume img {
   width: 400px;
+  border: 1px solid #333;
+  box-shadow: 2px 3px #888888;
 }
 
 #resume img:hover{
-  color: blue;
+  color: lightgrey;
 }
 
 footer {
