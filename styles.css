@@ -226,3 +226,72 @@ p {
     transform: translateY(20px);
   }
 }
+
+#profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  margin-bottom: 150px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container img {
+  width: 400px;
+}
+
+footer {
+  position: relative;
+  background: #333;
+  color: white;
+  padding: 30px;
+  line-height: 1.25em;
+  font-size: .8em;
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer p {
+  line-height: .4em;
+}
+
+.social li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 30px;
+}
+
+.social img {
+  width: 40px;
+}
+
+.social ul {
+  height: 50px;
+}
+
+footer a:link, footer a:visited {
+  color: #999;
+}
+
+footer a:hover{
+  color: #ffffff;
+}
+
+footer a:active{
+  color: #fff;
+}

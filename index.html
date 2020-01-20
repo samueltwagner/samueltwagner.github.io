@@ -1,9 +1,9 @@
 <html>
     <head>
         <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="test.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="test.js"></script>
+        <script src="scripts.js"></script>
     </head>
 
     <header class="main_h">
@@ -18,25 +18,37 @@
                 <ul>
                     <li><a href=".sec01">About Me</a></li>
                     <li><a href=".sec02">Projects</a></li>
-                    <li><a href=".sec03">Links</a></li>
+                    <li><a href=".sec03">Resume</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <body>
         <div class="hero">
-            <h1><span>Sam Wagner</span><br>Software Developer</h1>
+            <h1><span>Sam Wagner</span><br>Web Developer</h1>
+            <img id="profile-pic" src="/images/IMG_7980.jpeg" alt="Web Developer">
             <div class="mouse">
                 <span></span>
             </div>
         </div>
         <div class="row content">
             <h1 class="sec01">About Me</h1>
-            <p></p>
+            <h4>I really enjoy using .Net and Angular. Currently, I'm helping students understand .Net as a teaching assistant. I’m seeking entry level software engineering/web development positions. I’m looking to relocate as well. My goal is become a Full Stack Developer as part of a company that shares my values and culture. I still have a lot to learn, but I'm enjoying the process.</h4>
             <h1 class="sec02">Projects</h1>
-            <p></p>
-            <h1 class="sec03">Links</h1>
+            <div class="flex-container">
+                    <div><a href="/portfolio/TodoListProject/index.html"></a><img src="images/Animated GIF-downsized_large (2).gif" alt="to-do-list-screenshot"></div>
+                    <div><a href="/portfolio/PlatatapProject/circles.html"><img src="images/Animated GIF-downsized_large (1).gif" alt="sound game"></a></div>
+                    <div>3</div>  
+            </div>
+            <h1 class="sec03">Resume</h1>
             <p></p>
         </div>
     </body>
+    <footer class="social">
+        <ul>
+            <li><a href="https://github.com/samueltwagner"><img src="images/social/github.svg" alt="Github Icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/samuel-wagner/"><img src="/images/social/linkedin_svg.svg" alt="Linkedin Icon"></a></li>
+        </ul>
+        <p>Copyright &copy; 2020</p>
+    </footer>   
 </html>
