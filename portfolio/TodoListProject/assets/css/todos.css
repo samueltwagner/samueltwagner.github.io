@@ -11,7 +11,7 @@ h1 {
 	margin: 0;
 	padding: 10px 20px;
 	text-transform: uppercase;;
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: 400;
 }
 
@@ -23,13 +23,14 @@ ul {
 
 li {
 	background: #fff;
-	height: 40px;
-	line-height: 40px;
+	height: 100px;
+	line-height: 100px;
 	color: #666;
+	font-size: 26px;
 }
 
 li:hover span{
-	width: 40px;
+	width: 100px;
 	opacity: 1.0;
 }
 
@@ -40,7 +41,7 @@ li:nth-child(2n){
 
 span {
 	background: #0CED10;
-	height: 40px;
+	height: 100px;
 	margin-right: 20px;
 	text-align: center;
 	color: white;
@@ -52,7 +53,7 @@ span {
 }
 
 input {
-	font-size: 18px;
+	font-size: 30px;
 	background-color: #f7f7f7;
 	width: 100%;
 	box-sizing: border-box;
@@ -74,7 +75,8 @@ input:focus{
 
 #container {
 	background: #f7f7f7;
-	width: 360px;
+	width: 720px;
+	height: 500px;
 	margin: 100px auto;
 	box-shadow: 0 0 3px rgba(0,0,0 0.1);
 }
